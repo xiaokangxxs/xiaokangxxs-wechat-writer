@@ -6,7 +6,7 @@
 
 > **把自己的话写明白，再把文章做成真正能发布的公众号图文。**
 
-[![Version](https://img.shields.io/badge/version-1.3.1-blue.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-1.3.2-blue.svg)](VERSION)
 [![License](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-purple.svg)](SKILL.md)
 [![WeChat](https://img.shields.io/badge/WeChat-Official%20Account-07C160.svg)](docs/USAGE.md)
@@ -28,6 +28,8 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 
 ## 效果预览
 
+> GitHub 页面直接展示的是轻量 SVG 示意图；下方还有**真正的演示 PNG 文件**，已随仓库上传。它们是按已记录的风格特征本地合成的示例图，不冒充完整上游 AI 生图。
+
 这是**演示用文章**，并非作者已确认的真实口述经历或已发布的公众号文章。
 
 **测试文章：《AI 工具越用越多，为什么事情反而没做完？》**
@@ -40,6 +42,8 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 <p align="center"><img src="assets/readme/workflow.svg" width="100%" alt="完整十阶段写作与视觉交付流程"></p>
 
 > **图示说明：**仓库里的 SVG 是用于展示版式和视觉规则的可浏览测试示意图；原版高清 PNG、3D 人物素材以及离线 HTML 样稿见本项目的原始完整本地交付包。SVG 不冒充 AI 实际生成的 PNG 图。尚未完成真实公众号后台发布测试。
+
+[查看原始测试封面 169](examples/handraw-demo/cover-169-colored-pencil-2.35x1.png) · [封面 167](examples/handraw-demo/cover-167-risograph-2.35x1.png) · [查看真实配图](examples/handraw-demo/inline-01-drafts-vs-delivery-4x3.png)
 
 [阅读测试文章](examples/demo-article.md) · [五组标题及出图方案](examples/demo-publish-pack.md) · [测试与验收](tests/README.md) · [视觉规范](docs/VISUAL_GUIDE.md)
 

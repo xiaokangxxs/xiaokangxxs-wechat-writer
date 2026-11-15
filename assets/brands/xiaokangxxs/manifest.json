@@ -29,11 +29,11 @@
     "account_name": "use exact text; do not invent official account ID or QR",
     "body_inline_character": "optional and only when visually useful"
   },
-  "assets_rights": "User-provided personal-brand assets; excluded from project MIT license. Verify permission prior to public redistribution.",
+  "assets_rights": "User-provided personal-brand assets: published in optimized PNG format by the asset owner; excluded from project MIT license; credit/permission required for reuse.",
   "sha256": {
-    "avatar": "c67f9b04f9a36e80133118600a54c425f5f02d372ab7a957b6696eea99bded72",
-    "logo_lockup": "8f053408e68f56843e5a66d031c7c6c5e8e810cce2f20e82e9f19178b5720177",
-    "logo_mark": "67890287d6becffb3cbef3935781208ccd37a8527f6e56a5f13f26c8dc1b38b7",
-    "character_3d": "d6752408d3193d32237344ecb46b12d607578b4674a330d0471ee23b637a84da"
+    "avatar": "150989182b67a1b55d23f298bf994be8fcfd751f543ed4a5b868404ca4b09f94",
+    "character_3d": "0634c0104baed08a22c5064902fcfb00d6dab47868dd3f700436e9304ce30247",
+    "logo_lockup": "8a4e3b47d5effa5e159cd41bf571ece46752ec584db4a3c9df2450470bb53caf",
+    "logo_mark": "81bc83d2631bc5364123479133005c02f793f9709ebe00396fdd7414742ad5a6"
   }
 }
