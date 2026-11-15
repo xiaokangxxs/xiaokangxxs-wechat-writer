@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0",
+  "brand_id": "xiaokangxxs",
+  "account_name": "小康新鲜事儿",
+  "account_platform": "微信公众号",
+  "assets": {
+    "avatar": "avatar.png",
+    "logo_lockup": "logo-lockup.png",
+    "logo_mark": "logo-mark.png",
+    "character_3d": "character-3d.png"
+  },
+  "colors": {
+    "primary": "#2457D6",
+    "dark": "#18233A",
+    "light": "#FAFAF8",
+    "accent": "#F3D483"
+  },
+  "typography": {
+    "headline": "clean, bold Simplified Chinese, unobstructed",
+    "logo": "original provided image; never re-generate text"
+  },
+  "identity": {
+    "character": "3D boy with black sculpted hair, big eyes, blue jacket with white chest monogram; retain the look of reference asset",
+    "logo": "monogram with folded-page corner and associated original lockup"
+  },
+  "usage": {
+    "cover_character": "required by default",
+    "cover_logo": "required by default",
+    "account_name": "use exact text; do not invent official account ID or QR",
+    "body_inline_character": "optional and only when visually useful"
+  },
+  "assets_rights": "User-provided personal-brand assets; excluded from project MIT license. Verify permission prior to public redistribution.",
+  "sha256": {
+    "avatar": "c67f9b04f9a36e80133118600a54c425f5f02d372ab7a957b6696eea99bded72",
+    "logo_lockup": "8f053408e68f56843e5a66d031c7c6c5e8e810cce2f20e82e9f19178b5720177",
+    "logo_mark": "67890287d6becffb3cbef3935781208ccd37a8527f6e56a5f13f26c8dc1b38b7",
+    "character_3d": "d6752408d3193d32237344ecb46b12d607578b4674a330d0471ee23b637a84da"
+  }
+}

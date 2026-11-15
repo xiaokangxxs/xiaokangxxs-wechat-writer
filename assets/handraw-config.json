@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "upstream_repo": "https://github.com/yang0/handraw-style",
+  "upstream_credit": "yang0",
+  "mode": "auto_with_user_override",
+  "style_selection": "choose_using_theme_reader_and_visual_metaphor_no_keyword_lookup",
+  "cover": {
+    "mode": "graphic-text",
+    "ratio": "2.35:1",
+    "brand_character": "on_if_available",
+    "brand_logo": "exact_asset_overlay"
+  },
+  "inline": {
+    "mode": "pure-image_or_structured_diagram",
+    "ratio": "4:3",
+    "count_policy": "0-4_editorial_judgment",
+    "shared_style_with_cover": true
+  },
+  "legacy_style_ids_supported": true,
+  "full_catalog_requires": "upstream installed folder or authorized GitHub read access",
+  "demo_style": "FH-015",
+  "demo_legacy_style": "169",
+  "reference_image_in_demo": false
+}

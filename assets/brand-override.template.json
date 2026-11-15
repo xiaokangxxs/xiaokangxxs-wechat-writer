@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "brand_id": "your-brand",
+  "account_name": "你的公众号名称",
+  "account_platform": "微信公众号",
+  "assets": {
+    "character_3d": "character-3d.png",
+    "logo_lockup": "logo-lockup.png",
+    "logo_mark": "logo-mark.png",
+    "avatar": "avatar.png"
+  },
+  "colors": {
+    "primary": "#2457D6",
+    "dark": "#18233A",
+    "light": "#FAFAF8"
+  },
+  "usage": {
+    "cover_character": "required_if_available",
+    "cover_logo": "required_if_available",
+    "body_inline_character": "optional"
+  }
+}

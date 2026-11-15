@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "active_brand": "xiaokangxxs",
+  "registered_brands": {
+    "xiaokangxxs": "assets/brands/xiaokangxxs/manifest.json"
+  },
+  "override_precedence": [
+    "per_article_explicit_user_assets",
+    "active_brand_profile",
+    "bundled_default_brand"
+  ],
+  "do_not_mix_identities": true
+}
