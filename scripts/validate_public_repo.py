@@ -10,8 +10,9 @@ for rel in [
   'SKILL.md','README.md','README.en.md','VERSION','LICENSE',
   'scripts/render_article.py','scripts/handraw_bridge.py','scripts/brand_pack.py',
   'references/handraw-integration.md','references/brand-visual-policy.md',
-  'assets/readme/hero.svg','assets/readme/cover-demo.svg',
-  'assets/readme/illustration-demo.svg','assets/readme/workflow.svg',
+  'assets/readme/hero-handraw.webp','assets/readme/article-cover-latest.webp',
+  'assets/readme/article-illustrations-latest.webp','assets/readme/workflow-handraw.webp',
+  'examples/latest-article-handraw-preview.html',
   'examples/demo-article.md','examples/demo-publish-pack.md',
   'tests/test-cases.md','tests/README.md'
 ]:
@@ -36,3 +37,8 @@ if missing:
  for f in missing:print(' -',f)
  sys.exit(1)
 print('PASS: public documentation references resolve, core sources compile, style ID mapping verified')
+
+# Ensure that the new README artwork is not a placeholder or a broken image.
+for visual in ['hero-handraw.webp', 'article-cover-latest.webp', 'article-illustrations-latest.webp', 'workflow-handraw.webp']:
+    binary = (root/'assets/readme'/visual).read_bytes()
+    assert binary.startswith(b'RIFF') and binary[8:12] == b'WEBP', visual

@@ -2,7 +2,7 @@
 
 > A collaborative WeChat Official Account writing skill focused on preserving the author's real voice instead of generating generic “viral” copy.
 
-**Version: v1.3.2** · Agent Skills bundle · Chinese-first · offline HTML preview · no auto publishing
+**Version: v1.3.3** · Agent Skills bundle · Chinese-first · offline HTML preview · no auto publishing
 
 ## What it does
 
@@ -49,3 +49,7 @@ MIT.
 Integrates numbered visual-style routing and cover/illustration planning based on [yang0/handraw-style](https://github.com/yang0/handraw-style), with full credit to author **yang0**. Use a user-selected style number (e.g. legacy `169` = `FH-015 Colored Pencil Diary`) or dynamically recommend one using actual article context. The five verified offline sample styles work without downloading the full gallery; for any other style, provide an authorized GitHub source or the local upstream folder. Original brand character and logo pixels are preserved in composites.
 
 The demonstrations in `examples/handraw-demo/` were locally composited from the user's supplied brand assets and pencil-effect graphic elements. They did not use the upstream reference images or a generative image model. Run `python scripts/handraw_bridge.py --style 169 --theme 'Topic'` for a reusable structured prompt.
+
+## Updated handdraw-style visuals (v1.3.3)
+
+The README now uses newly generated hand-drawn-inspired WebP artwork instead of the previous SVG mockups. The latest article cover, illustration overview, and ten-stage workflow are available in `assets/readme/`. Download `examples/latest-article-handraw-preview.html` with the repository for a local article preview. Visual guidance is credited to [yang0/handraw-style](https://github.com/yang0/handraw-style); these generated visuals were not produced using the upstream complete reference-image engine. Verify brand marks and Chinese text before publication.

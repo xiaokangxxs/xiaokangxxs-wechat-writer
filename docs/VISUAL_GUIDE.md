@@ -27,6 +27,14 @@
 
 0–4 张，通常以 4:3 信息图或概念隐喻图为主；每张必须有准确段落锚点、存在目的、alt 描述与提示词。流程/表格中的数字必须有原始依据。
 
-## 示例标记
+## GitHub 最新作品（v1.3.3）
 
-assets/readme 目录的 SVG 是公开可分发的说明用示意图，不等于完整的 AI 生图成品；仓库中若包含 PNG，也需要明确来源、是否使用上游参考图以及原始品牌文件是否参与合成。
+README 页面展示的四张图片统一采用手绘纸感、彩铅笔触、公众号品牌蓝与简洁视觉隐喻。素材均为实际生成的 WebP：
+
+- `assets/readme/hero-handraw.webp`：技能介绍主视觉。
+- `assets/readme/article-cover-latest.webp`：AI 工具与真实交付主题封面。
+- `assets/readme/article-illustrations-latest.webp`：三项核心观点配图。
+- `assets/readme/workflow-handraw.webp`：十阶段流程图。
+- `examples/latest-article-handraw-preview.html`：文章和新版配图的离线预览。
+
+本组图片基于 handraw-style 项目所记录的手绘视觉特征，使用图像生成工具创作，非通过上游完整参考图库直接渲染。生成内容中的中文文字与 Logo 不保证像素级准确，正式商用应覆叠经授权的原始 Logo 和文字。旧版图保留在 examples，供测试对比使用。

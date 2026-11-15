@@ -4,7 +4,7 @@ description: 通过严格分步确认的协作流程创作微信公众号中文�
 license: MIT
 metadata:
   author: xiaokangxxs
-  version: "1.3.2"
+  version: "1.3.3"
   language: zh-CN
 ---
 

@@ -6,7 +6,7 @@
 
 > **把自己的话写明白，再把文章做成真正能发布的公众号图文。**
 
-[![Version](https://img.shields.io/badge/version-1.3.2-blue.svg)](VERSION)
+[![Version](https://img.shields.io/badge/version-1.3.3-blue.svg)](VERSION)
 [![License](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
 [![Agent Skills](https://img.shields.io/badge/Agent-Skills-purple.svg)](SKILL.md)
 [![WeChat](https://img.shields.io/badge/WeChat-Official%20Account-07C160.svg)](docs/USAGE.md)
@@ -22,13 +22,13 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 
 </div>
 
-<p align="center"><img src="assets/readme/hero.svg" alt="xiaokangxxs-wechat-writer writing workflow overview" width="100%"></p>
+<p align="center"><img src="assets/readme/hero-handraw.webp" alt="xiaokangxxs-wechat-writer writing workflow overview" width="100%"></p>
 
 ---
 
 ## 效果预览
 
-> GitHub 页面直接展示的是轻量 SVG 示意图；下方还有**真正的演示 PNG 文件**，已随仓库上传。它们是按已记录的风格特征本地合成的示例图，不冒充完整上游 AI 生图。
+> **v1.3.3 最新手绘图片**：全部 README 主视觉和文章预览已替换为新版手绘风生成图片，不再沿用旧矢量人物占位图；正式发布前仍需检查生成文字与品牌 Logo。
 
 这是**演示用文章**，并非作者已确认的真实口述经历或已发布的公众号文章。
 
@@ -36,14 +36,14 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 
 | 公众号文章封面 | 文章核心观点可视化 |
 | :---: | :---: |
-| <img src="examples/handraw-demo/cover-169-colored-pencil-2.35x1.png" width="100%" alt="公众号封面概念展示"> | <img src="examples/handraw-demo/inline-02-rework-loop-4x3.png" width="100%" alt="文章正文可视化演示"> |
+| <img src="assets/readme/article-cover-latest.webp" width="100%" alt="最新测试文章手绘封面"> | <img src="assets/readme/article-illustrations-latest.webp" width="100%" alt="最新文章三项核心观点手绘图"> |
 | 默认品牌与手绘排版方向 | AI 生成快 ≠ 最终交付快 |
 
-<p align="center"><img src="assets/readme/workflow.svg" width="100%" alt="完整十阶段写作与视觉交付流程"></p>
+<p align="center"><img src="assets/readme/workflow-handraw.webp" width="100%" alt="完整十阶段写作与视觉交付流程"></p>
 
-> **图示说明：**顶部和流程图使用矢量 SVG 解释步骤；表格中的封面与正文配图是真实上传的 PNG 测试成品。图片由本地排版合成，不应标为经过完整上游模型生成的高清 AI 出图。四张个人品牌 PNG 在仓库 `assets/brands/xiaokangxxs/`，为保护仓库体积采用无联网依赖的压缩版本。
+> **图片来源说明：**新图基于 [yang0/handraw-style](https://github.com/yang0/handraw-style) 的手绘视觉风格规则构思，并通过图像生成工具实际生成；未声称运行上游完整参考图库或将示例作为已发布文章。品牌 Logo 和文字需在正式使用前用原始文件复核。
 
-[查看原始测试封面 169](examples/handraw-demo/cover-169-colored-pencil-2.35x1.png) · [封面 167](examples/handraw-demo/cover-167-risograph-2.35x1.png) · [查看真实配图](examples/handraw-demo/inline-01-drafts-vs-delivery-4x3.png)
+[查看最新文章封面](assets/readme/article-cover-latest.webp) · [最新正文配图](assets/readme/article-illustrations-latest.webp) · [完整图文预览](examples/latest-article-handraw-preview.html)
 
 [阅读测试文章](examples/demo-article.md) · [五组标题及出图方案](examples/demo-publish-pack.md) · [测试与验收](tests/README.md) · [视觉规范](docs/VISUAL_GUIDE.md)
 
@@ -92,17 +92,19 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 - **正文**：0–4 张为宜；长文优先 4:3；必须解释具体段落，不因字数自动塞图。
 - **样式**：拒绝乱堆机器人、对话框、霓虹科技装饰。更多见 [视觉指南](docs/VISUAL_GUIDE.md)。
 
-## 真实测试图片（点击查看）
+## 最新文章效果图（手绘版）
 
-| 封面 · 169 彩铅日记 | 封面 · 167 双色孔版 |
-| :---: | :---: |
-| ![169 号封面](examples/handraw-demo/cover-169-colored-pencil-2.35x1.png) | ![167 号封面](examples/handraw-demo/cover-167-risograph-2.35x1.png) |
+![AI 工具越用越多，为什么事情反而没做完？](assets/readme/article-cover-latest.webp)
 
-| 生成与交付 | 返工循环 | 完成标准 |
-| :---: | :---: | :---: |
-| ![配图一](examples/handraw-demo/inline-01-drafts-vs-delivery-4x3.png) | ![配图二](examples/handraw-demo/inline-02-rework-loop-4x3.png) | ![配图三](examples/handraw-demo/inline-03-done-checklist-4x3.png) |
+![文章三项核心观点可视化](assets/readme/article-illustrations-latest.webp)
 
-[离线图文稿（下载后可打开）](examples/demo-article-handraw-illustrated-preview.html) · [纯正文预览](examples/demo-article-preview.html) · [品牌封面预览](examples/demo-article-branded-preview.html)
+[阅读完整文章](examples/demo-article.md) · [完整手绘图文离线预览](examples/latest-article-handraw-preview.html) · [视觉设计规范](docs/VISUAL_GUIDE.md)
+
+<details><summary>历史对照案例（保留回归基线，不再作为主视觉）</summary>
+
+[169 风格旧版](examples/handraw-demo/cover-169-colored-pencil-2.35x1.png) · [167 风格旧版](examples/handraw-demo/cover-167-risograph-2.35x1.png) · [历史图文预览](examples/demo-article-handraw-illustrated-preview.html)
+
+</details>
 
 ## 30 秒上手
 
@@ -159,7 +161,7 @@ xiaokangxxs-wechat-writer/
 ├── SECURITY.md / CONTRIBUTING.md / CITATION.cff
 ├── references/             # 写作、核查、品牌、手绘、排版
 ├── assets/
-│   ├── readme/             # GitHub 首页测试图（SVG）
+│   ├── readme/             # GitHub 首页手绘生成图片（WebP）
 │   └── *.template.md       # 作者档案、文章、封面、配图
 ├── scripts/                # 校验与本地 HTML 演示
 ├── examples/               # 测试文章、发布包、图文效果
