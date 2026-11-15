@@ -29,11 +29,11 @@
     "account_name": "use exact text; do not invent official account ID or QR",
     "body_inline_character": "optional and only when visually useful"
   },
-  "assets_rights": "User-provided personal-brand assets: published in optimized PNG format by the asset owner; excluded from project MIT license; credit/permission required for reuse.",
+  "assets_rights": "User-provided personal-brand assets; GitHub contains optimized PNG derivatives. Assets excluded from MIT license. Permission required for reuse.",
   "sha256": {
     "avatar": "150989182b67a1b55d23f298bf994be8fcfd751f543ed4a5b868404ca4b09f94",
-    "character_3d": "0634c0104baed08a22c5064902fcfb00d6dab47868dd3f700436e9304ce30247",
     "logo_lockup": "8a4e3b47d5effa5e159cd41bf571ece46752ec584db4a3c9df2450470bb53caf",
-    "logo_mark": "81bc83d2631bc5364123479133005c02f793f9709ebe00396fdd7414742ad5a6"
+    "logo_mark": "81bc83d2631bc5364123479133005c02f793f9709ebe00396fdd7414742ad5a6",
+    "character_3d": "0634c0104baed08a22c5064902fcfb00d6dab47868dd3f700436e9304ce30247"
   }
 }

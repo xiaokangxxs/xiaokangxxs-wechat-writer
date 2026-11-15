@@ -36,12 +36,12 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 
 | 公众号文章封面 | 文章核心观点可视化 |
 | :---: | :---: |
-| <img src="assets/readme/cover-demo.svg" width="100%" alt="公众号封面概念展示"> | <img src="assets/readme/illustration-demo.svg" width="100%" alt="文章正文可视化演示"> |
+| <img src="examples/handraw-demo/cover-169-colored-pencil-2.35x1.png" width="100%" alt="公众号封面概念展示"> | <img src="examples/handraw-demo/inline-02-rework-loop-4x3.png" width="100%" alt="文章正文可视化演示"> |
 | 默认品牌与手绘排版方向 | AI 生成快 ≠ 最终交付快 |
 
 <p align="center"><img src="assets/readme/workflow.svg" width="100%" alt="完整十阶段写作与视觉交付流程"></p>
 
-> **图示说明：**仓库里的 SVG 是用于展示版式和视觉规则的可浏览测试示意图；原版高清 PNG、3D 人物素材以及离线 HTML 样稿见本项目的原始完整本地交付包。SVG 不冒充 AI 实际生成的 PNG 图。尚未完成真实公众号后台发布测试。
+> **图示说明：**顶部和流程图使用矢量 SVG 解释步骤；表格中的封面与正文配图是真实上传的 PNG 测试成品。图片由本地排版合成，不应标为经过完整上游模型生成的高清 AI 出图。四张个人品牌 PNG 在仓库 `assets/brands/xiaokangxxs/`，为保护仓库体积采用无联网依赖的压缩版本。
 
 [查看原始测试封面 169](examples/handraw-demo/cover-169-colored-pencil-2.35x1.png) · [封面 167](examples/handraw-demo/cover-167-risograph-2.35x1.png) · [查看真实配图](examples/handraw-demo/inline-01-drafts-vs-delivery-4x3.png)
 
@@ -91,6 +91,18 @@ npx skills add xiaokangxxs/xiaokangxxs-wechat-writer
 - **封面**：默认 2.35:1；一个核心视觉隐喻、少量标题字、清晰品牌元素、移动端裁切安全区。
 - **正文**：0–4 张为宜；长文优先 4:3；必须解释具体段落，不因字数自动塞图。
 - **样式**：拒绝乱堆机器人、对话框、霓虹科技装饰。更多见 [视觉指南](docs/VISUAL_GUIDE.md)。
+
+## 真实测试图片（点击查看）
+
+| 封面 · 169 彩铅日记 | 封面 · 167 双色孔版 |
+| :---: | :---: |
+| ![169 号封面](examples/handraw-demo/cover-169-colored-pencil-2.35x1.png) | ![167 号封面](examples/handraw-demo/cover-167-risograph-2.35x1.png) |
+
+| 生成与交付 | 返工循环 | 完成标准 |
+| :---: | :---: | :---: |
+| ![配图一](examples/handraw-demo/inline-01-drafts-vs-delivery-4x3.png) | ![配图二](examples/handraw-demo/inline-02-rework-loop-4x3.png) | ![配图三](examples/handraw-demo/inline-03-done-checklist-4x3.png) |
+
+[离线图文稿（下载后可打开）](examples/demo-article-handraw-illustrated-preview.html) · [纯正文预览](examples/demo-article-preview.html) · [品牌封面预览](examples/demo-article-branded-preview.html)
 
 ## 30 秒上手
 

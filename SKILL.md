@@ -4,7 +4,7 @@ description: 通过严格分步确认的协作流程创作微信公众号中文�
 license: MIT
 metadata:
   author: xiaokangxxs
-  version: "1.3.1"
+  version: "1.3.2"
   language: zh-CN
 ---
 
@@ -18,7 +18,7 @@ metadata:
 
 在工作开始时，检查是否已有可读的作者档案；没有则询问一次是否建立，用户不想填可先继续。详情：[作者档案](references/author-profile.md)。首次真实创作不以完整档案为前提。
 
-**品牌默认值（v1.3）**：在封面/配图阶段读取 `assets/brand-profile.json`，默认账号为「小康新鲜事儿」，使用经用户授权提供的 3D IP、原始 Logo、公众号字标和头像；缺少图片文件时应提示用户补齐。**封面默认应融入真实 3D 角色和 Logo；无法访问原图时不得假称已加入**；若用户另行提供品牌素材或明确要求无人物，则以用户本篇意图优先。绝不将默认 IP 和其他用户的账号混用；不得用 AI 重绘替代真实 Logo 文件。详细读取 [品牌视觉策略](references/brand-visual-policy.md)，示例素材见 `assets/brands/xiaokangxxs/`。
+**品牌默认值（v1.3）**：在封面/配图阶段读取 `assets/brand-profile.json`，默认账号为「小康新鲜事儿」，使用随包提供的 3D IP、原始 Logo、公众号字标和头像。**封面默认必须出现该 3D 角色，并体现原始 Logo/公众号身份**；若用户另行提供品牌素材或明确要求无人物，则以用户本篇意图优先。绝不将默认 IP 和其他用户的账号混用；不得用 AI 重绘替代真实 Logo 文件。详细读取 [品牌视觉策略](references/brand-visual-policy.md)，示例素材见 `assets/brands/xiaokangxxs/`。
 
 ## 画风引擎 handraw-style（v1.3 新增）
 
@@ -42,7 +42,7 @@ metadata:
 5. **口述或提供原稿**：建议语音转文字口述，然后发文字稿；也接受零散句子、完整草稿、多段输入。若作者无法语音，不能卡流程。对缺口只问必要问题。收到并确认“口述完成/素材已齐”才进入整理。读 [大纲与采集](references/outline-and-capture.md)。
 6. **整理成稿**：默认 L1 保真整理：删语气词与赘述、修断句和病句、理段落、补最必要衔接、检查因果与承接；不更改立场，不补事实，不硬插成语/金句，不强求固定字数。L2 深度润色或 L3 协作扩写要明确授权。逐段考虑删除是否影响观点。结尾具体自然。仅在真实观点转折处可加粗 0–3 句金句。**先直接输出正文全文**；随后提示实质改动及待核实处，等待作者审稿确认。读 [编辑规则](references/editing-rules.md)。
 7. **质检与标题**：作者确认文章可进入发布后，检查结论证据、数字、引用、逻辑、侵权与广告规范；输出 5 个不同策略、≤25 个汉字（实践中按字符数保守限制）的标题及“正文支撑”说明，严禁伪造数字和标题党。可给推荐但最终由作者确认。读 [标题](references/title-generator.md) 与 [核查](references/research-and-factcheck.md)。
-8. **制作发布包**：确定标题后输出正文 Markdown、微信手机端清爽排版稿、120 字内摘要、封面图 brief、封面图生成提示词、正文配图点位、每张配图的作用说明/替代文本/生成提示词、发布检查清单。配图不是装饰任务，必须服务于理解、节奏或传播。正文通常 0–4 张图；若文章本身不需要图，要明确说明“不建议硬配图”。当用户明确要求出图且图像工具可用时，继续生成封面图与正文配图；若当前环境不能出图，只输出结构化图像 brief。**默认从已授权品牌包读取 3D 人物、Logo 与公众号字标；缺图时应请求素材，使用它们作封面视觉基底；Logo 与账号文字以原文件或可靠合成方式呈现，不得让生图工具凭空重绘。若用户提供新的品牌资源，先按 [品牌视觉策略](references/brand-visual-policy.md) 处理本篇覆盖/新品牌切换，不能把其它品牌和默认角色混杂。**读 [排版](references/wechat-formatting.md)、[视觉生成](references/visual-generation.md)、[handraw 画风](references/handraw-integration.md) 与 [发布](references/publishing-checklist.md)。
+8. **制作发布包**：确定标题后输出正文 Markdown、微信手机端清爽排版稿、120 字内摘要、封面图 brief、封面图生成提示词、正文配图点位、每张配图的作用说明/替代文本/生成提示词、发布检查清单。配图不是装饰任务，必须服务于理解、节奏或传播。正文通常 0–4 张图；若文章本身不需要图，要明确说明“不建议硬配图”。当用户明确要求出图且图像工具可用时，继续生成封面图与正文配图；若当前环境不能出图，只输出结构化图像 brief。**默认从内置品牌包读取 3D 人物、Logo 与公众号字标，使用它们作封面视觉基底；Logo 与账号文字以原文件或可靠合成方式呈现，不得让生图工具凭空重绘。若用户提供新的品牌资源，先按 [品牌视觉策略](references/brand-visual-policy.md) 处理本篇覆盖/新品牌切换，不能把其它品牌和默认角色混杂。**读 [排版](references/wechat-formatting.md)、[视觉生成](references/visual-generation.md)、[handraw 画风](references/handraw-integration.md) 与 [发布](references/publishing-checklist.md)。
 9. **复盘沉淀（可选）**：仅在得到用户授权后保存经确认的文风、选题、来源和最终版本。阅读/转发指标只能来自用户提供或授权可访问的真实数据，不臆测。读 [复盘](references/review-and-learning.md)。
 
 ## 质量与输出底线

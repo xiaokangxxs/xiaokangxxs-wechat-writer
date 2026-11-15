@@ -2,7 +2,7 @@
 
 > A collaborative WeChat Official Account writing skill focused on preserving the author's real voice instead of generating generic “viral” copy.
 
-**Version: v1.3.1** · Agent Skills bundle · Chinese-first · offline HTML preview · no auto publishing
+**Version: v1.3.2** · Agent Skills bundle · Chinese-first · offline HTML preview · no auto publishing
 
 ## What it does
 

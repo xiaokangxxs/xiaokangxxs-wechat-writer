@@ -1,14 +1,11 @@
-# README 视觉资源说明
+# README 视觉资源 / Visual Assets
 
-GitHub README 展示的四张图位于 `assets/readme/`：
+GitHub README 提供两类**真实存在并能打开**的图片：
 
-- `hero.svg` — 写作 Skill 定位和流程主视觉；
-- `cover-demo.svg` — 公众号文章封面概念示意；
-- `illustration-demo.svg` — “生成快 ≠ 交付快”的正文观点示意；
-- `workflow.svg` — 十阶段创作及发布工作流。
+1. `assets/readme/hero.svg` 和 `assets/readme/workflow.svg` 是解释工作流的原创 SVG 示意图。
+2. `examples/handraw-demo/*.png` 是真实 PNG 封面和正文配图测试成品：169 彩铅、167 孔版、三张 4:3 文章插图。
+3. `assets/brands/xiaokangxxs/` 内置四份优化 PNG：3D 个人形象、Logo、横版公众号字标、头像。可由用户按篇覆盖或建立新品牌，不混合不同品牌。
+4. `examples/brand-cover-demo-*.png` 为品牌封面概念成品。
+5. `examples/demo-article-handraw-illustrated-preview.html` 及其余两个预览页面均引用相对路径，克隆仓库即可离线显示，不需要访问云图片地址。
 
-这些 SVG 为**开源项目说明用途的矢量示意图**，可以直接在 GitHub 上查看。它们不是完整的作者品牌原始 3D 人物素材，也不是 handraw-style 按编号生成的高清封面成品。
-
-完整本地项目包附有图片来源及全尺寸 PNG，使用时请遵守品牌版权与用户授权规则。为了避免项目 README 的截图缺失，页面内所有 `assets/readme/*.svg` 链接均保持相对路径，并由 CI 检查存在性。
-
-要修改图库或视觉规则，请编辑 `references/handraw-integration.md` 与 `references/brand-visual-policy.md`，而不是直接以 README 的 SVG 作为生图参考图。
+**来源与限制**：公开 PNG 是作者原始交付素材的优化版本，不宣称与原始高分辨率文件字节一致；示范图用本地布局/合成脚本制作，并非完整使用上游 370 画风模型批量生成。品牌素材不包含在仓库 MIT 代码许可证中；不允许未经授权擅自挪用个人形象或 logo。详见 `ATTRIBUTION.md` 和 `assets/brands/README.md`。

@@ -149,9 +149,11 @@ class PackagingTests(unittest.TestCase):
             self.assertTrue(b.startswith(b'\x89PNG\r\n\x1a\n'))
             width, height = struct.unpack('>II', b[16:24])
             self.assertGreater(width, 1000)
-            self.assertGreater(height, 650)
+            self.assertGreater(height, 450)
+            expected_ratio = 16/9 if '16x9' in fname else 2.35
+            self.assertLess(abs(width/height-expected_ratio), .04)
         page = (ROOT/'examples/demo-article-branded-preview.html').read_text(encoding='utf-8')
-        self.assertIn('data:image/png;base64,', page)
+        self.assertIn('src="brand-cover-demo-2.35x1.png"', page)
         self.assertIn('alt="文章封面预览"', page)
         self.assertNotIn('src="https://', page)
 
@@ -198,7 +200,9 @@ class PackagingTests(unittest.TestCase):
     def test_handraw_illustrated_preview_has_three_embedded_real_images(self):
         page=(ROOT/'examples/demo-article-handraw-illustrated-preview.html').read_text(encoding='utf-8')
         self.assertEqual(page.count('<figure style='), 3)
-        self.assertEqual(page.count('data:image/png;base64,'), 4)  # cover + 3 images
+        self.assertIn('src="handraw-demo/cover-169-colored-pencil-2.35x1.png"', page)
+        for stem in ['inline-01-drafts-vs-delivery-4x3.png', 'inline-02-rework-loop-4x3.png', 'inline-03-done-checklist-4x3.png']:
+            self.assertIn('src="handraw-demo/' + stem + '"', page)
         self.assertNotIn('src="https://', page)
         self.assertIn('小康新鲜事儿',page)
 

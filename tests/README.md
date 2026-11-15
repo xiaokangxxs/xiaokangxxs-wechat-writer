@@ -1,24 +1,18 @@
-# 测试与验收 / Tests
+# 测试说明 / Tests
 
-本仓库包含两类验证，**不可混为一谈**。
+本仓库包含真实可读取的品牌 PNG 和五张测试 PNG（经过文件尺寸与色彩空间优化），以及三个可离线打开的文章预览 HTML。
 
-## A. GitHub 公开源码检查（CI 自动执行）
-运行 `python scripts/validate_public_repo.py`：
-- 检查 README 中引用的图像、徽章目标、主要页面和文档链接；
-- 检查主要源码入口及 Handraw 编号映射；
-- Python 语法检查；
-- 不依赖生成式图像模型，不访问微信公众号后台。
-
-## B. 完整高清资源包回归（本地执行）
-从作者提供的完整 v1.3.0 ZIP 中取得四份原始品牌 PNG、七张真实测试 PNG 及独立 HTML 预览文件，复制到仓库对应位置，再执行：
+## 一键检查
 
 ```bash
+python scripts/validate_public_repo.py
 python scripts/validate_skill.py .
 python tests/run_tests.py
 ```
 
-本套回归约束原始 PNG SHA256、4:3 和 2.35:1 图片比例、离线 HTML 的数据嵌入以及 26 项综合测试。
+- `validate_public_repo.py`：README 图像/文档链接、公开文件完整性和风格编号。
+- `validate_skill.py`：Skill 元数据、默认品牌文件 SHA256、依赖引用和样例完整性。
+- `run_tests.py`：文章 HTML、标题长度、版权和用户确认原则、handraw 169/167 编号、PNG 画幅、品牌隔离、三张配图位置，共 26 项回归测试。
+- `.github/workflows/validate.yml`：push / PR 时执行上述所有检查，不依赖额外包，不会自动发布公众号。
 
-**重要说明**：GitHub 中 `assets/readme/*.svg` 是用于 README 的可公开展示的原创 SVG 示意图；它们不是原始 AI 出图，也不替代品牌真实 3D PNG。未经用户授权不要将品牌素材进行二次开源。
-
-测试示例文章只用于工作流演示，不表示作者亲身经历，也未验证微信公众平台后台的实际发布。
+公开 GitHub 中的图片已经过优化，像素与原始高清附件不同；SHA256 使用 GitHub 仓库现有优化图作为测试基准。原始高清图仍可使用用户历史交付 ZIP 取得。本项目测试成功不等于真实公众号后台发布验证成功。
