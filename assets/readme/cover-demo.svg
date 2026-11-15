@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1175" height="500" viewBox="0 0 1175 500" role="img">
+<defs><linearGradient id="paper" x2="1" y2="1"><stop stop-color="#fffefb"/><stop offset="1" stop-color="#f1f5fc"/></linearGradient><pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".8" fill="#b1c5e5" opacity=".65"/></pattern></defs>
+<rect width="1175" height="500" rx="24" fill="url(#paper)"/><rect width="1175" height="500" rx="24" fill="url(#dots)" opacity=".4"/>
+<rect x="46" y="38" width="8" height="33" rx="4" fill="#2357d6"/><text x="68" y="62" font-size="21" font-weight="bold" font-family="Arial,'Noto Sans CJK SC',sans-serif" fill="#2b59c9">小康新鲜事儿</text>
+<text x="60" y="156" font-size="58" font-weight="bold" font-family="Arial,'Noto Sans CJK SC',sans-serif" fill="#18284a">AI 工具越用越多，</text>
+<text x="60" y="239" font-size="58" font-weight="bold" font-family="Arial,'Noto Sans CJK SC',sans-serif" fill="#18284a">事情为什么还没做完？</text>
+<path d="M60 262 Q365 279 686 255" stroke="#245edc" stroke-width="8" stroke-linecap="round" fill="none" opacity=".8"/>
+<text x="62" y="333" font-size="26" font-family="Arial,'Noto Sans CJK SC',sans-serif" fill="#5d6a7e">生成得快，并不等于交付得快。</text>
+<rect x="60" y="378" width="398" height="58" rx="15" fill="#eaf1ff"/><text x="83" y="415" font-size="24" font-family="Arial,'Noto Sans CJK SC',sans-serif" fill="#2655c8">观点 · 实践 · 真正完成</text>
+<path d="M772 109 Q840 40 920 112 Q995 60 1079 152" stroke="#658fe9" stroke-width="5" stroke-dasharray="10 14" fill="none"/>
+<g transform="translate(785 102)">
+<ellipse cx="170" cy="344" rx="180" ry="26" fill="#d8e4f7"/>
+<rect x="45" y="247" width="255" height="102" rx="49" fill="#2359da"/><rect x="155" y="254" width="37" height="36" fill="#f4c09b"/>
+<ellipse cx="164" cy="135" rx="112" ry="115" fill="#f7cba8"/>
+<path d="M53 116 Q18 57 69 19 Q112 -17 154 14 Q219 -11 271 58 Q281 96 263 132 Q241 82 203 81 Q158 51 117 89 Q70 61 53 116" fill="#1e2847"/>
+<ellipse cx="118" cy="152" rx="12" ry="16" fill="#263149"/><ellipse cx="211" cy="152" rx="12" ry="16" fill="#263149"/>
+<path d="M139 200 Q164 214 190 198" stroke="#975b50" stroke-width="4" fill="none" stroke-linecap="round"/>
+</g></svg>
