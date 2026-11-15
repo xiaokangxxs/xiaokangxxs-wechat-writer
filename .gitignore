@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+tmp/
+dist/
+output/
+*.log
+vendor/
+private/
+author-profile.local.md
+assets/brands/custom/
